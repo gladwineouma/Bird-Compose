@@ -20,24 +20,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             BirdsComposeTheme {
-            Greeting("Elizabeth")
+                AppNavigation()
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(
-        text = "Hello $name!", modifier = Modifier.padding(30.dp)
-
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    BirdsComposeTheme {
-        Greeting("Android")
-    }
-}
